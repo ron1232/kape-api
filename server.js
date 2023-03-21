@@ -47,7 +47,6 @@ app.use(
 );
 app.use(
   cors({
-    origin: "*",
     credentials: true,
     optionsSuccessStatus: 200,
   })

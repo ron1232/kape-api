@@ -25,8 +25,8 @@ export class PriceModel {
     const monthlyPrice = (+newPrice?.USD / 12).toFixed(2);
 
     return {
-      oldPrice,
-      newPrice,
+      oldPrice: oldPrice?.USD,
+      newPrice: newPrice?.USD,
       discount,
       monthlyPrice,
     };
