@@ -11,6 +11,8 @@ const getPriceByBundle = (req, res) => {
   }
 
   const result = PriceModel.getAllPrices();
+
+  res.header("access-control-allow-origin", "*");
   res.send(result);
 };
 
